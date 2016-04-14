@@ -771,9 +771,16 @@ footer a:hover {
 .clearfix {display: block;}
 
 
-.avatar-prisi, .avatar-jones {
+.avatar {
   border: 2px solid #DDD;
   margin-bottom: 1em;
+  transition: 0s -webkit-filter filter;
+}
+
+.avatar:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  transition-delay:1s;
 }
 
 /* #Media Queries
